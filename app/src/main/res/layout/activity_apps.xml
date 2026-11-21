@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/search"
+            style="@style/Field"
+            android:layout_width="260dp"
+            android:hint="Поиск"
+            android:imeOptions="actionSearch|flagNoExtractUi"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/showSystem"
+            style="@style/Choice"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Системные" />
+
+        <Button
+            android:id="@+id/btnDone"
+            style="@style/Btn"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="0dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:text="Готово" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/muted"
+        android:textSize="13sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/panel_bg"
+        android:clipToPadding="false"
+        android:padding="8dp" />
+</LinearLayout>

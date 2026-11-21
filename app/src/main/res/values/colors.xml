@@ -1,0 +1,11 @@
+<resources>
+    <color name="bg">#FF101418</color>
+    <color name="panel">#FF1A2028</color>
+    <color name="field">#FF242C36</color>
+    <color name="focus">#FF2F81F7</color>
+    <color name="text">#FFE8EDF2</color>
+    <color name="muted">#FF8B97A5</color>
+    <color name="ok">#FF3FB950</color>
+    <color name="err">#FFF85149</color>
+    <color name="warn">#FFD29922</color>
+</resources>

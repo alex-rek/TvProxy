@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TV Proxy</string>
+    <string name="notif_running">Прокси активен</string>
+</resources>
